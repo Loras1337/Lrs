@@ -1,4 +1,8 @@
 RCTRL::
-Process, Close, msedge.exe
-Return
+{
+	
+	winget, PID, PID, A
+	process, close, %PID%
 
+}
+Return
